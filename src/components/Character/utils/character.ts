@@ -44,10 +44,12 @@ const setCharacter = (
                     mesh.material = newMat;
                   } else if (mesh.name === "Plane010") { // Hat Body
                     const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
+                    newMat.map = null;
                     newMat.color = new THREE.Color("#FFB347"); // Light Orange
                     mesh.material = newMat;
                   } else if (mesh.name === "Plane010_1") { // Hat Brim
                     const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
+                    newMat.map = null;
                     newMat.color = new THREE.Color("#FFFFFF"); // White
                     mesh.material = newMat;
                   }
